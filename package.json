@@ -1,0 +1,14 @@
+{
+  "name": "sociabuzz-roblox",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "logs": "wrangler tail",
+    "db:init": "wrangler d1 execute sociabuzz-roblox --remote --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}
